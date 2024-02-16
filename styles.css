@@ -1,0 +1,32 @@
+p{
+    background-color: aqua;
+}
+
+div{
+    width:50px; /* ширина */
+    height:50px; /* высота */
+    background-color:red; /* цвет фона */
+    margin: 10px; /* отступ от других элементов */
+    text-align: center;
+}
+
+*{      /*for all elements*/
+    background-color: floralwhite;
+}
+
+h1, h2, h3, h4{
+                 
+    color: red;
+}
+
+#main p{
+    font-size: 16px;
+}
+#footer p{
+    font-size: 13px;
+}
+
+.article > p{
+             
+    color: red;
+}

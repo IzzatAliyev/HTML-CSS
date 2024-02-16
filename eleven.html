@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        a:link {
+            color: blue;
+            text-decoration: none
+        }
+
+        a:visited {
+            color: pink;
+            text-decoration: none
+        }
+
+        a:hover {
+            color: red;
+            text-decoration: underline
+        }
+
+        a:active {
+            color: yellow;
+            text-decoration: underline
+        }
+
+        input:hover {
+            border: 2px solid red;
+        }
+
+        a:not(.blueLink) {
+            color: red;
+        }
+
+        /* :hover{
+            font-size: 30px;
+        } */
+
+        :lang(ru) {
+            color: red;
+        }
+
+        :checked+span {
+            color: red;
+            font-weight: bold;
+            /* выделение жирным */
+        }
+
+        :default {
+            border: 2px solid red;
+        }
+
+        input:invalid {
+            border: 2px solid red;
+        }
+
+        input:valid {
+            border: 2px solid green;
+        }
+
+        :optional {
+            border: 2px solid blue;
+        }
+
+        :required {
+            border: 2px solid red;
+        }
+
+        .warning::before {
+            content: "Важно! ";
+            font-weight: bold;
+        }
+
+        .warning::after {
+            content: " Будьте осторожны!";
+            font-weight: bold;
+        }
+
+        ::selection {
+            color: white;
+            background-color: black;
+        }
+
+        input[type="text"] {
+
+            border: 2px solid red;
+        }
+
+        .link[href="http://apple.com"] {
+
+            color: burlywood;
+        }
+
+        a {
+            font-size: 18px;
+            color: red !important;
+        }
+
+        #menu a {
+            color: navy;
+        }
+
+        /* header > p, main > p, footer > p {font-size: 18px; font-family: Verdana;} альтернативный вариант без :is*/
+        :is(header, main, footer)>p {
+            font-size: 18px;
+            font-family: Verdana;
+        }
+    </style>
+</head>
+
+<body>
+    <a href="12.html">12pag</a>
+    <a href="index.html">Учебник по CSS3</a>
+    <input type="text" />
+
+    <a>Первая ссылка</a><br />
+    <a class="blueLink">Вторая ссылка</a><br />
+    <a>Третья ссылка</a>
+
+    <div>
+        <form>
+            <p lang="ru-RU">Я изучаю CSS3</p>
+            <p lang="en-US">I study CSS3</p>
+            <p lang="de-DE">Ich lerne CSS3</p>
+        </form>
+    </div>
+
+    <div>
+        <h2>Выберите технологию</h2>
+        <p>
+            <input type="checkbox" checked name="html5" /><span>HTML5</span>
+        </p>
+        <p>
+            <input type="checkbox" name="dotnet" /><span>.NET</span>
+        </p>
+        <p>
+            <input type="checkbox" name="java" /><span>Java</span>
+        </p>
+
+        <h2>Укажите пол</h2>
+        <p>
+            <input type="radio" value="man" checked name="gender" /><span>мужской</span>
+        </p>
+        <p>
+            <input type="radio" value="woman" name="gender" /><span>женский</span>
+        </p>
+    </div>
+
+    <div>
+        <form>
+            <input name="login" />
+            <input type="submit" value="Войти" />
+        </form>
+    </div>
+
+    <br>
+    <div>
+        <form>
+            <p><input type="text" name="login" placeholder="Введите логин" required /></p>
+            <p><input type="password" name="password" placeholder="Введите пароль" required /></p>
+            <input type="submit" value="Войти" />
+        </form>
+
+    </div>
+    <br>
+    <div>
+        <form>
+            <p>
+                <label for="login">Логин:</label>
+                <input type="text" id="login" name="login" required />
+            </p>
+            <p>
+                <label for="password">Пароль:</label>
+                <input type="password" id="password" name="password" required />
+            </p>
+            <p>
+                <label for="name">Имя:</label>
+                <input type="text" id="name" name="name" />
+            </p>
+            <input type="submit" value="Регистрация" />
+        </form>
+    </div>
+
+    <p><span class="warning">Не пытайтесь засунуть язык в электрическую розетку.</span></p>
+
+    <br>
+    <a class="link" href="http://microsoft.com">Microsoft</a> |
+    <a class="link" href="https://google.com">Google</a> |
+    <a class="link" href="http://apple.com">Apple</a>
+
+    <br>
+    <header>
+        <p>Text in Header</p>
+        <div><p>Text in Header Div</p></div>
+    </header>
+    <main>
+        <p>Text in Main</p>
+        <div><p>Text in Main Div</p></div>
+    </main>
+    <footer>
+        <p>Text in Footer</p>
+        <div><p>Text in Footer Div</p></div>
+    </footer>
+</body>
+
+</html>

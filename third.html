@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <base href="/third">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    ul#menu li{
+        display: inline;
+    }
+    .cell1{
+        background-color: aquamarine;
+    }
+    .cell2{
+        background-color: darkcyan;
+    }
+    .cell3{
+        background-color: chartreuse;
+    }
+
+    td{
+                width: 60px; 
+                height:60px; 
+                border: solid 1px silver; 
+                text-align:center;
+            }
+    </style>
+</head>
+<body>
+    <a href="fourth.html">to  fourth page</a>
+    <a href="second.html">to  second page</a>
+    <ul id="menu">
+        <li>Главная</li>
+        <li>Блог</li>
+        <li>Форум</li>
+        <li>О сайте</li>
+    </ul>
+    <details>
+        <summary>Text</summary>
+        <ul>
+            <li>Hello</li>
+            <li>Hello</li>
+            <li>Hello</li>
+        </ul>
+    </details>
+    <dl>
+        <dt>Онтология</dt>
+        <dd>Раздел философии, изучающий фундаментальные принципы бытия</dd>
+        <dt>Гносеология</dt>
+        <dd>Философская дисциплина, занимающаяся исследованиями, критикой и теориями познания</dd>
+        <dt>Производственные отношения</dt>
+        <dd>Совокупность отношений между людьми, складывающихся в процессе общественного производства, 
+            обмена, распределения материальных благ и услуг.</dd>
+    </dl>
+
+    <table>
+        <tr>
+            <td class="cell1">Модель</td> <td class="cell2">Компания</td> <td class="cell3">Цена</td>
+        </tr>
+        <tr>
+            <td class="cell1">Nexus 6P</td> <td class="cell2">Huawei</td> <td class="cell3">49000</td>
+        </tr>
+        <tr>
+            <td class="cell1">iPhone 6S PLus</td> <td class="cell2">Apple</td> <td class="cell3">62000</td>
+        </tr>
+        <tr>
+            <td class="cell1">Lumia 950 XL</td> <td class="cell2">Microsoft</td> <td class="cell3">35000</td>
+        </tr>
+    </table>
+
+    <table>
+        <caption><b>Популярные смартфоны 2015</b></caption>
+        <thead>
+            <tr>
+                <th class="cell1">Модель</th> <th class="cell2">Компания</th> <th class="cell3">Цена</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Nexus 6P</td> <td>Huawei</td> <td>49000</td>
+            </tr>
+            <tr>
+                <td>iPhone 6S PLus</td> <td>Apple</td> <td>62000</td>
+            </tr>
+            <tr>
+                <td>Lumia 950 XL</td> <td>Microsoft</td> <td>35000</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th colspan="3">Информация по состоянию на 17 марта</th>
+            </tr>
+        </tfoot>
+    </table>
+
+    <table>
+        <tr>
+            <td rowspan="2" style="background-color:green;">1</td>
+            <td>2</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>5</td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td colspan="2" style="background-color:red;">7</td>
+        </tr>
+    </table>
+</body>
+</html>

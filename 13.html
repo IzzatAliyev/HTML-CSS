@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* div {
+            width: 100px;
+            height: 100px;
+            margin: 40px 30px;
+            border: 1px solid #333;
+            background-color: #ccc;
+
+            transition-property: background-color, width, height, border-color;
+            transition-duration: 2s;
+            
+        }
+
+        div:hover {
+            background-color: red;
+            width: 120px;
+            height: 120px;
+            border-color: blue;
+        } */
+
+        /* div {
+            width: 100px;
+            height: 100px;
+            margin: 40px 30px;
+            border: 1px solid #333;
+
+            background-color: #ccc;
+            transition-property: background-color, width;
+            transition-duration: 2s, 5s;
+            transition-timing-function: ease-in-out;
+        }
+
+        div:hover {
+            background-color: red;
+            width: 200px;
+        } */
+
+        /* @keyframes backgroundColorAnimation {
+            from {
+                background-color: red;
+            }
+
+            to {
+                background-color: blue;
+            }
+        } */
+
+        /* @keyframes backgroundColorAnimation {
+            from {
+                background-color: red;
+            }
+
+            25% {
+                background-color: yellow;
+            }
+
+            50% {
+                background-color: green;
+            }
+
+            75% {
+                background-color: blue;
+            }
+
+            to {
+                background-color: violet;
+            }
+        }
+
+        div {
+            width: 100px;
+            height: 100px;
+            margin: 40px 30px;
+            border: 1px solid #333;
+            background-color: #ccc;
+        }
+
+        div:hover {
+
+            animation-name: backgroundColorAnimation;
+            animation-duration: 2s;
+        } */
+
+        /* @keyframes backgroundColorAnimation {
+            from {
+                background-color: red;
+            }
+
+            to {
+                background-color: blue;
+            }
+        }
+
+        @keyframes opacityAnimation {
+            from {
+                opacity: 0.2;
+            }
+
+            to {
+                opacity: 0.9;
+            }
+        }
+
+        div {
+            width: 100px;
+            height: 100px;
+            margin: 40px 30px;
+            border: 1px solid #333;
+            background-color: #ccc;
+
+            animation-name: backgroundColorAnimation, opacityAnimation;
+            animation-duration: 2s, 3s;
+        } */
+
+        /* @keyframes backgroundColorAnimation {
+            from {
+                background-color: red;
+            }
+
+            to {
+                background-color: blue;
+            }
+        }
+
+        div {
+            width: 100px;
+            height: 100px;
+            margin: 40px 30px;
+            border: 1px solid #333;
+
+            animation-name: backgroundColorAnimation;
+            animation-duration: 3s;
+            animation-timing-function: ease-in-out;
+        } */
+
+        @keyframes text1 {
+            10% {
+                opacity: 1;
+            }
+
+            40% {
+                opacity: 0;
+            }
+        }
+
+        @keyframes text2 {
+            30% {
+                opacity: 0;
+            }
+
+            60% {
+                opacity: 1;
+            }
+        }
+
+        @keyframes banner {
+            10% {
+                background-color: #008978;
+            }
+
+            40% {
+                background-color: #34495e;
+            }
+
+            80% {
+                background-color: green;
+            }
+        }
+
+        .banner {
+            width: 600px;
+            height: 120px;
+            background-color: #777;
+            margin: 0 auto;
+            position: relative;
+        }
+
+        .text1,
+        .text2 {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            line-height: 120px;
+            text-align: center;
+            font-size: 40px;
+            color: #fff;
+            opacity: 0;
+        }
+
+        .text1 {
+            animation: text1 6s infinite;
+        }
+
+        .text2 {
+            animation: text2 6s infinite;
+        }
+
+        .animated {
+            opacity: 0.8;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-color: #34495e;
+            animation: banner 6s infinite;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="banner">
+        <div class="animated">
+            <div class="text1">Только в этом месяце</div>
+            <div class="text2">Скидки по 20%</div>
+        </div>
+    </div>
+    <a href="14.html">14page</a>
+</body>
+
+</html>
